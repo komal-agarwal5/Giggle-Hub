@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
@@ -29,31 +29,39 @@ body {
     -webkit-text-stroke-color: black;
     letter-spacing: 2px;
 }
-.look{
+
+.look {
     padding-top: 15px;
     color: navy;
 }
-.cont img{
-    height: 300px;
+
+.cont img {
     /* width: 300px; */
+    height: 300px;
     object-fit: cover;
 }
-.title,.author{
+
+.title,
+.author {
     margin: 10px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 540;
 }
 
 button {
-    margin: 20px; 
+    margin: 20px;
     border: none;
     color: white;
     background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 7px;
 }
-.meme-gen{
+
+.meme-gen {
     overflow: hidden;
     border-radius: 5px;
     width: 160px;
@@ -63,7 +71,8 @@ button {
     padding: 10px 10px;
     letter-spacing: 2px;
 }
-.meme-gen::after{
+
+.meme-gen::after {
     position: absolute;
     content: "";
     z-index: -1;
@@ -73,27 +82,30 @@ button {
     height: 100%;
     background-color: #1fd1f9;
     background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
-  transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-.meme-gen:hover{
+
+.meme-gen:hover {
     background: transparent;
-    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
     color: #fff;
 }
-.meme-gen:hover::after{
+
+.meme-gen:hover::after {
     -webkit-transform: scale(2) rotate(180deg);
     transform: scale(2) rotate(180deg);
-    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-    -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-inset -4px -4px 6px 0 rgba(255,255,255,.5),
-inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
 }
-.meme-share{
-    left: 125px;
-    bottom: 25px;
+
+.meme-share {
+    /* left: 125px; */
+    bottom: 35px;
     box-shadow: none;
     width: 100px;
     height: 40px;
@@ -104,34 +116,36 @@ inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
     font-size: 0.8rem;
     letter-spacing: 1.5px;
 }
-.meme-share span{
-    background: rgb(0,172,238);
-    background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+
+.meme-share span {
+    background: rgb(0, 172, 238);
+    background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
     display: block;
     position: absolute;
     width: 100px;
     height: 40px;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-   margin: 0;
-   text-align: center;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   -webkit-transition: all 0.3s;
-   transition: all 0.3s;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    margin: 0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
-.meme-share span:nth-child(1){
+
+.meme-share span:nth-child(1) {
     box-shadow:
-   -7px -7px 20px 0px #fff9,
-   -4px -4px 5px 0px #fff9,
-   7px 7px 20px 0px #0002,
-   4px 4px 5px 0px #0001;
-   -webkit-transform: rotateX(90deg);
-   -moz-transform: rotateX(90deg);
-   -webkit-transform-origin: 50% 50% 20px;
-  -moz-transform-origin: 50% 50% -20px;
-  transform-origin: 50% 50% -20px;
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% 20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
 }
 
 .meme-share span:nth-child(2) {
@@ -141,25 +155,26 @@ inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
     -webkit-transform-origin: 50% 50% -20px;
     -moz-transform-origin: 50% 50% -20px;
     transform-origin: 50% 50% -20px;
-  }
+}
 
-  .meme-share:hover span:nth-child(1) {
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
+.meme-share:hover span:nth-child(1) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
     -webkit-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
     transform: rotateX(0deg);
-  }
-  .meme-share:hover span:nth-child(2) {
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-   color: transparent;
+}
+
+.meme-share:hover span:nth-child(2) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    color: transparent;
     -webkit-transform: rotateX(-90deg);
     -moz-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
-  }
+}
 
 footer {
     background-color: rgb(85, 84, 84);
