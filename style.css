@@ -106,7 +106,7 @@ button {
 .meme-share {
     /* left: 125px; */
     /* bottom: 35px; */
-    margin-top: 0px;
+    margin-top: -25px;
     box-shadow: none;
     width: 100px;
     height: 40px;
