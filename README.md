@@ -22,6 +22,9 @@
  Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. 
 Please make sure to update tests as appropriate.
 
+## License
+<a href="https://github.com/komal-agarwal5/Giggle-Hub/blob/main/LICENSE">Apache License 2.0  © Komal Agarwal </a>
+
 ## Where to contact ?
 Contact: [komal.agarwal0709@gmail.com]
 
